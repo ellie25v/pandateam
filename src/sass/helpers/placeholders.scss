@@ -1,0 +1,13 @@
+%button {
+    width: 192px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: #fcae26;
+    color: white;
+    font-family: $p-font;
+    font-weight: 700;
+    font-size: 16px; 
+    &:hover{
+        background-color: $yellow-color;
+    }
+}
