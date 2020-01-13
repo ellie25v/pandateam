@@ -1,17 +1,10 @@
-.direction__title {
+.section__title {
     display: flex;
     align-items: center;
     padding-bottom: 30px;
 }
 
-.direction__title--text {
-    color: #000000;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
-.direction__title--target {
+.section__title--target {
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -21,6 +14,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.section__title--text {
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
 }
 
 .target {
