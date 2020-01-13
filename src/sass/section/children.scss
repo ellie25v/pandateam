@@ -120,3 +120,47 @@
         }
     }
 }
+
+@media (min-width: 1300px) {
+    .children {
+        padding-top: 118px;
+        padding-bottom: 58px;
+
+        .container {
+            width: 1300px;
+        }
+
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        &__text {
+            width: 508px;
+        }
+
+        &__descrp {
+            font-size: 20px;
+            line-height: 35px;
+            letter-spacing: 1px;
+
+            &:first-child::before {
+                transform: translate(calc(-100% - 16px), calc(-100% - 3px));
+            }
+        }
+
+        &__plashka {
+            min-height: 228px;
+            padding: 62px 258px 62px 228px;
+            font-size: 25px;
+            line-height: 35px;
+            letter-spacing: 1.25px;
+
+            &::before{
+                left: 150px;
+            }
+        }
+    }
+}
