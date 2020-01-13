@@ -1,0 +1,71 @@
+.children {
+    padding-top: 34px;
+    padding-bottom: 26px;
+    box-sizing: border-box;
+
+    &__wrapper {
+        margin-bottom: 42px;
+    }
+
+    &__descrp {
+        font-family: $p-font;
+        font-size: 14px;
+        line-height: 20px;
+        color: $p-color;
+        letter-spacing: .7px;
+
+        &:not(:last-child) {
+            margin-bottom: 18px;
+        }
+
+        &:first-child::before {
+            content: "";
+            display: block;
+            width: 17px;
+            height: 14px;
+            background-image: url("../images/quote.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+
+.children__plashka {
+    border-radius: 8px;
+    background-color: #7550de;
+    color: #fff;
+    width: 100%;
+    min-height: 230px;
+    font-family: $p-font;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.9px;
+    text-align: center;
+    padding: 26px;
+
+    &::before {
+        display: block;
+        content: "";
+        background-color: $yellow-color;
+        width: 60px;
+        height: 2px;
+        margin: 0 auto;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .children__plashka-span {
+        display: block;
+    }
+}
+
+@media (max-width: 1299px) {
+    .children__text {
+        margin-bottom: 24px;
+    }
+}
