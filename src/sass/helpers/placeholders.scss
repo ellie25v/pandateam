@@ -11,3 +11,12 @@
         background-color: $yellow-color;
     }
 }
+%icon {
+    width: 36px;
+    height: 36px;
+}
+%p{
+    font-size: 18px;
+    font-family: $p-font;
+    color: $p-color;
+}

@@ -45,7 +45,6 @@ img {
 body {
   font-family: $h-font;
   font-weight: 400;
-  text-align: center;
 }
 
 .container {
@@ -69,7 +68,7 @@ body {
   @media (min-width: 1300px) {
     .container {
       width: 1300px;
-      margin: 0 auto;
+      
     }
 
     .section {
