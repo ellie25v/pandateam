@@ -1,9 +1,9 @@
 .header {
     position: absolute;
     top: 0;
-    margin: 0 auto;
     min-height: 560px;
     background-color: #000;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
 
@@ -19,15 +19,167 @@
     height: 20px;
     margin-top: 30px;
 
-
     &-dropdown {
         display: none;
+        top: 0;
+        left: 0;
         position: absolute;
         background-color: #824fe3;
-        width: 100vh;
+        width: 100vw;
+        height: 100%;
+        color: white;
+        font-family: $p-font;
+        font-weight: bold;
+
+
+
+        &::before {
+            content: "";
+            background-image: url('../images/goiteens_logo-01.svg');
+            width: 110px;
+            height: 35px;
+            display: none;
+            background-position: center;
+            object-fit: cover;
+            background-repeat: no-repeat;
+            margin-top: 22px;
+            margin-left: 15%;
+        }
+
+        &::after {
+            content: "";
+            background-image: url('../images/close.svg');
+            width: 24px;
+            height: 24px;
+            display: none;
+            background-position: center;
+            object-fit: cover;
+            background-repeat: no-repeat;
+            top: 28px;
+            right: 15%;
+            position: absolute;
+        }
     }
 
     &:hover .menu-dropdown {
         display: block;
+    }
+
+    &:hover .menu-dropdown::before {
+        display: block;
+    }
+
+    &:hover .menu-dropdown::after {
+        display: block;
+    }
+
+
+    &__btn {
+        display: block;
+        margin: 20px auto;
+        box-shadow: 0 5px 5px rgba($color: #461a97, $alpha: 0.5);
+        background-color: #f39313;
+
+        @extend %button;
+    }
+}
+
+.main-nav__menu {
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    &-item {
+        text-transform: capitalize;
+        text-align: center;
+        position: relative;
+        padding-bottom: 10px;
+        font-size: 28px;
+    }
+
+    &::hover {
+        border-bottom: 2px solid $yellow-color;
+    }
+
+}
+
+
+.menu-dropdown::after:focus .menu-dropdown {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .header {
+        min-height: 600px;
+    }
+
+    .main-nav__menu {
+        padding-top: 120px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .header {
+        min-height: 90px;
+    }
+
+    .menu {
+        background-image: none;
+        width: 100%;
+        min-height: 42px;
+
+        &-dropdown {
+
+            margin: 0;
+            position: static;
+            background-color: transparent;
+            width: 1020px;
+            display: flex;
+            justify-content: space-between;
+
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                display: none;
+            }
+
+        }
+
+        &:hover .menu-dropdown::before {
+            display: none;
+        }
+
+        &:hover .menu-dropdown::after {
+            display: none;
+        }
+
+        &__btn {
+            box-shadow: none;
+            margin: 0;
+        }
+    }
+
+    .main-nav {
+        width: 1020px;
+
+        &__menu {
+            padding: 0;
+            margin-top: 0px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            &-item {
+                padding-bottom: 0px;
+                font-size: 18px;
+            }
+        }
     }
 }
