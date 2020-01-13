@@ -2,5 +2,16 @@
  * Все паршалы импортировать в этот файл
  */
 
-@import 'normalize.scss';
-@import 'base.scss';
+ @import 'normalize.scss';
+ @import 'helpers/fonts.scss';
+ @import 'helpers/variables.scss';
+ @import 'helpers/placeholders.scss';
+ @import 'base.scss';
+ @import 'section/header.scss';
+ @import 'section/bg-img.scss';
+ @import 'section/children.scss';
+ @import 'section/directions.scss';
+ @import 'section/program.scss';
+ @import 'section/structure.scss';
+ @import 'section/footer.scss';
+
