@@ -113,9 +113,11 @@
 
 @media (min-width: 768px) {
 
-    .direction__title--target{margin-right: 22px;}
+    .section__title--target {
+        margin-right: 22px;
+    }
 
-    .direction__title--text {
+    .section__title--text {
         font-size: 33px;
     }
 
@@ -126,18 +128,23 @@
     }
 
 }
-@media (min-width: 1300px){
+
+@media (min-width: 1300px) {
+.direction__list--item{
+    width: 324px;
+}
     .direction__list--item,
     .item__title,
     .item__desc,
     .item__age,
     .item__age--num,
     .item__age--word,
-    .arrow{
-    transition: transform .2s linear;
+    .arrow {
+        transition: transform .2s linear;
     }
+
     .direction__list--item:hover,
-    .direction__list--item:focus{
+    .direction__list--item:focus {
         transform: scale(1.01);
     }
 }
