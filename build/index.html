@@ -15,11 +15,81 @@
   </head>
 
   <body>
-    
+    <header class="header">
+        <div class="container">
+            <h1 class="visually-hidden">GOITEENS</h1>
+            <img class="logo" src="../images/goiteens_logo-01.svg"
+                alt="logo"
+                width="100"
+                height="26">
+            <div class="menu">
+                <div class="menu-dropdown">
+                    <nav class="main-nav">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__list-item"><a class="main-nav__list-link"
+                                href="#">Front-End</a></li>
+                            <li class="main-nav__list-item"><a class="main-nav__list-link"
+                                href="#">game dev</a></li>
+                            <li class="main-nav__list-item"><a class="main-nav__list-link"
+                                href="#">smart design</a></li>
+                            <li class="main-nav__list-item"><a class="main-nav__list-link"
+                                href="#">GoStart kids</a></li>
+                            <li class="main-nav__list-item"><a class="main-nav__list-link"
+                                href="#">Вакансії</a></li>
+                            <li class="main-nav__list-item"><a class="main-nav__list-link"
+                                href="#">Контакти</a></li>
+                        </ul>
+                    </nav>
+                    <button class="menu__btn">Залишити заявку</button>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
+
+      <section class="bg-img">
+          <div class="container">
+             <div class="text-wrapper">
+                  <h2 class="text-lozung">Наша місія</h2>
+                  <div class="text-main">
+                    <p class="text-description">Допомогти кожному підлітку <br> створити свою 
+                        <span class="text-description-item">історію успіху</span></p>
+                  </div>
+                  <a href="#children" class="text-btn"></a>
+              </div>
       
+      </section>
+
+        
+  <section id="#children" class="children section">
+
+          <div class="container">
+              <div class="children__wrapper">
+                  <div class="children__text">
+                      <p class="children__descrp">За останні 5 років кількість дітей, які вміють користуватися
+                          комп'ютером, збільшилася приблизно в 10 разів.
+                      </p>
+                      <p class="children__descrp">Як зазначає більшість дослідників,
+                          ці тенденції будуть прискорюватися
+                          незалежно від шкільної освіти. </p>
+                  </div>
+                  <picture class="children__picture">
+                      <source srcset="./images/children-lg.png" media="(min-width: 1300px)">
+                      <source srcset="./images/children-md.png" media="(min-width: 768px)">
+                      <source srcset="./images/children.png" media="(min-width: 320px)">
+                      <img src="./images/children.png" alt="children" class="children__img">
+                  </picture>
+              </div>
+              <p class="children__plashka">Програма навчання
+                  створюється за участі
+                  відомих спеціалістів
+                  <span class="children__plashka-span">IT сектору,</span>
+                  успішних стартаперів, бізнес-тренерів
+                  і підліткових психологів.</p>
+          </div>
+      </section>
       
-      <section class="direction section">
+       <section class="direction section">
           <div class="container">
               <h2 class="section__title">
                   <div class="section__title--target">
@@ -93,22 +163,6 @@
               </ul>
           </div>
       
-      </section>
-      <section class="program section">
-          <div class="container">
-              <h2 class="section__title">
-                  <div class="section__title--target">
-                      <svg class="target icon1">
-                          <use href="../images/sprite.svg#title-icon-1-24px"></use>
-                      </svg>
-                      <svg class="target icon2">
-                          <use href="../images/sprite.svg#title-icon-2-24px"></use>
-                      </svg>
-                  </div>
-                  <span class="section__title--text">як ми навчаємо</span>
-              </h2>
-          </div>
-      </section>
       
     </main>
     
