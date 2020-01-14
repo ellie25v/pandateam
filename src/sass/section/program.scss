@@ -1,0 +1,238 @@
+.section__title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.section__title--target {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fcae26;
+    margin-right: 10px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__title--text {
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.target {
+    display: block;
+    height: 18px;
+    width: 18px;
+    fill: #fff;
+}
+
+.icon2 {
+    display: none;
+}
+
+.program__list {
+    width: 100%;
+}
+
+.program__list--item {
+    adding: 0 44px;
+    width: 280px;
+
+    &:first-child .program__icon--bg {
+        background-color: rgba(252, 174, 38, .2);
+    }
+
+    &:first-child .program__icon {
+        fill: rgb(252, 174, 38);
+    }
+
+    &:nth-child(2) .program__icon--bg {
+        background-color: rgba(253, 101, 48, .2);
+    }
+
+    &:nth-child(2) .program__icon {
+        fill: rgb(253, 101, 48);
+    }
+
+    &:nth-child(3) .program__icon--bg {
+        background-color: rgba(130, 79, 227, .2);
+    }
+
+    &:nth-child(3) .program__icon {
+        fill: rgb(130, 79, 227);
+    }
+
+    &:nth-child(4) .program__icon--bg {
+        background-color: rgba(0, 171, 159, .2);
+    }
+
+    &:nth-child(4) .program__icon {
+        fill: rgb(0, 171, 159);
+    }
+
+    &:nth-child(5) .program__icon--bg {
+        background-color: rgba(0, 171, 159, .2);
+    }
+
+    &:nth-child(5) .program__icon {
+        fill: rgb(0, 171, 159);
+    }
+
+    &:nth-child(6) .program__icon--bg {
+        background-color: rgba(253, 101, 48, .2);
+    }
+
+    &:nth-child(6) .program__icon {
+        fill: rgb(253, 101, 48);
+    }
+
+    &:last-child .program__icon--bg {
+        background-color: rgba(252, 174, 38, .2);
+    }
+
+    &:last-child .program__icon {
+        fill: rgb(252, 174, 38);
+    }
+}
+
+
+.program__icon--bg {
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.program__icon {
+    @extend %icon;
+}
+
+.program__list--item:first-child .program__icon--bg {
+    background-color: rgba(252, 174, 38, .2);
+}
+
+.program__list--item:first-child .program__icon {
+    fill: rgb(252, 174, 38);
+}
+
+.program__list--item:nth-child(2) .program__icon--bg {
+    background-color: rgba(253, 101, 48, .2);
+}
+
+.program__list--item:nth-child(2) .program__icon {
+    fill: rgb(253, 101, 48);
+}
+
+.program__list--item:nth-child(3) .program__icon--bg {
+    background-color: rgba(130, 79, 227, .2);
+}
+
+.program__list--item:nth-child(3) .program__icon {
+    fill: rgb(130, 79, 227);
+}
+
+.program__list--item:nth-child(4) .program__icon--bg {
+    background-color: rgba(0, 171, 159, .2);
+}
+
+.program__list--item:nth-child(4) .program__icon {
+    fill: rgb(0, 171, 159);
+}
+
+.program__list--item:nth-child(5) .program__icon--bg {
+    background-color: rgba(0, 171, 159, .2);
+}
+
+.program__list--item:nth-child(5) .program__icon {
+    fill: rgb(0, 171, 159);
+}
+
+.program__list--item:nth-child(6) .program__icon--bg {
+    background-color: rgba(253, 101, 48, .2);
+}
+
+.program__list--item:nth-child(6) .program__icon {
+    fill: rgb(253, 101, 48);
+}
+
+.program__list--item:last-child .program__icon--bg {
+    background-color: rgba(252, 174, 38, .2);
+}
+
+.program__list--item:last-child .program__icon {
+    fill: rgb(252, 174, 38);
+}
+
+.program__text {
+    font-size: 14px;
+    font-family: $p-font;
+    color: rgb(70, 70, 70);
+    line-height: 1.429;
+}
+
+
+@media (max-width:768px) {
+    .program__list--item:not(:last-child) {
+        margin-bottom: 18px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1300px) {
+    .program__list--item:not(:last-child) {
+        margin-bottom: 38px;
+    }
+}
+
+@media (min-width:768px) {
+    .program__icon--bg {
+        width: 80px;
+        height: 80px;
+    }
+
+    .icon1 {
+        display: none;
+    }
+
+    .icon2 {
+        display: block;
+    }
+
+    .program__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .program__text {
+        font-size: 16px;
+        line-height: 1.375;
+    }
+
+}
+
+@media (min-width:1300px) {
+    .program {
+        background-color: rgb(250, 250, 250);
+    }
+
+    .program__list--item:not(:nth-last-child(-n+3)) {
+        margin-bottom: 64px;
+    }
+
+    .program__icon--bg {
+        width: 100px;
+        height: 100px;
+    }
+
+    .program__text {
+        font-size: 18px;
+        color: rgb(68, 68, 68);
+        line-height: 1.667;
+    }
+}
