@@ -1,6 +1,5 @@
 .bg-img {
     background-image: url(../images/bg.png);
-    position: absolute;
     width: 100%;
     min-height: 560px;
     background-repeat: repeat;
@@ -152,7 +151,7 @@
         padding-top: 12px;
         padding-left: 64px;
         padding-right: 30px;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         position: relative;
     }
 
