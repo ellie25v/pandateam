@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" width="22" height="22">
+	<defs>
+		<image width="22" height="22" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABOElEQVRIS62VPU7DQBCFv9dxJySinIOGnwpogAoaQGmgIxWpSArugcLJHtpoba3Wa3sd2Y1l7/rz7Jt5MyJetpfAXpKbd1PutgUsJO3Dd+EB2/fAJ7ADrqfCI/QbuADuJG1k+wz4S6LbSbqaGO0WuEy+OW0ifgeekoWNpNsauO0v4CbZ+yHp+QCOcgQpgiTNNQovQNeSHlqNB+Dtxjz6IWgHHCPPj9aB285P19nTSpFG1KfbFMmK4AjIM/0GnNQmeQgc1kJtpmWUHmywLHvBMeqw/gOcZ8kbNVINuBT18eDEpvNKYTtP3irK8VJjomPKrcr+HfCYo3pqedggNY6qtf/cTejQ2dJGX6VbqY0WpFtJeg2NfhFGUk2m+/pzoYLaRt+OpqnTI3FoM5oeJa1TjecYpktJv+Fn/1Q5v4UOmN/LAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Open Burger">
+		<use id="close" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+	</g>
+</svg>
