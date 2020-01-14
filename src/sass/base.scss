@@ -1,12 +1,15 @@
+
 html{
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -59,23 +62,23 @@ body {
   padding: 26px 0;
 }
 
-  @media (min-width: 768px) {
-    .section {
-      padding: 34px 0;
-    }
-
-    .container {
-      width: 620px;
-    }
+@media (min-width: 768px) {
+  .section {
+    padding: 34px 0;
   }
 
-  @media (min-width: 1300px) {
-    .container {
-      width: 1300px;
-      
-    }
-
-    .section {
-      padding: 58px 0;
-    }
+  .container {
+    width: 620px;
   }
+}
+
+@media (min-width: 1300px) {
+  .container {
+    width: 1300px;
+
+  }
+
+  .section {
+    padding: 58px 0;
+  }
+}

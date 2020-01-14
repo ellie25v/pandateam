@@ -1,0 +1,143 @@
+.section__title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.section__title--target {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: $yellow-color;
+    margin-right: 10px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__title--text {
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.target {
+    display: block;
+    height: 18px;
+    width: 18px;
+    fill: #fff;
+}
+
+.direction__list--item {
+    display: inline-block;
+    width: 280px;
+    background-color: #fafafa;
+    border-radius: 7px;
+    padding: 28px 34px 20px 44px;
+    text-align: left;
+
+    &:hover,
+    &:focus {
+        background-color: $yellow-color;
+    }
+
+    &:hover .item__desc,
+    &:focus .item__desc,
+    &:hover .item__age,
+    &:focus .item__age,
+    &:hover .arrow,
+    &:focus .arrow {
+        color: #fff;
+        fill: #fff;
+    }
+}
+
+
+
+.item__title {
+    font-size: 25px;
+    font-family: $p-font;
+    color: rgb(39, 39, 39);
+    font-weight: 700;
+    line-height: 1;
+    padding-bottom: 28px;
+}
+
+.item__desc {
+    font-size: 16px;
+    font-family: $p-font;
+    color: rgb(68, 68, 68);
+    line-height: 1.25;
+    padding-bottom: 18px;
+}
+
+.item__age {
+    display: flex;
+    justify-content: space-between;
+    width: 112px;
+    height: 44px;
+    color: $yellow-color;
+    margin-bottom: 18px;
+}
+
+.item__age--num {
+    align-self: flex-end;
+    font-size: 30px;
+    font-family: $h-font;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.item__age--word {
+    align-self: flex-start;
+    font-size: 13px;
+    font-family: $p-font;
+    line-height: 1.692;
+    text-decoration: underline;
+}
+
+.arrow {
+    display: block;
+    width: 20px;
+    height: 14px;
+    fill: $yellow-color;
+}
+
+@media(max-width: 768px) {
+    .direction__list--item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .direction__title--target{margin-right: 22px;}
+
+    .direction__title--text {
+        font-size: 33px;
+    }
+
+    .direction__list {
+        display: flex;
+        min-width: 560px;
+        flex-wrap: wrap;
+    }
+
+}
+@media (min-width: 1300px){
+    .direction__list--item,
+    .item__title,
+    .item__desc,
+    .item__age,
+    .item__age--num,
+    .item__age--word,
+    .arrow{
+    transition: transform .2s linear;
+    }
+    .direction__list--item:hover,
+    .direction__list--item:focus{
+        transform: scale(1.01);
+    }
+}
