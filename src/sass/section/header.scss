@@ -134,6 +134,7 @@
 
 @media (max-width:1299px){
     .menu:hover .text-wrapper{
+        position: static;
         display: none;
     }
 }
