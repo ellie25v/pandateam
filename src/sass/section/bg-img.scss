@@ -13,10 +13,10 @@
     display: block;
     top: 0;
     left: 50%;
-    
+
     transform: translateX(-50%);
     margin-top: 300px;
-    
+
 }
 
 .text-lozung {
@@ -25,9 +25,17 @@
     line-height: 59px;
     color: white;
 }
+
 .text-main {
     background-color: rgba(22, 24, 32, 0.68);
     width: 280px;
+}
+
+.bg-img__btn {
+    width: 100%;
+    position: relative;
+    min-height: 500px;
+
 }
 
 .text-description {
@@ -39,14 +47,14 @@
     padding-bottom: 11px;
     color: white;
     padding-top: 8px;
-  
+
 }
 
 .text-description-item {
     font-family: $p-font;
     font-size: 16px;
     font-weight: 700;
-    color: $yellow-color;    
+    color: $yellow-color;
 
 }
 
@@ -55,7 +63,7 @@
     height: 19px;
     width: 13px;
     position: absolute;
-    top: 140%;
+    top: 96%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -68,11 +76,12 @@
         background-image: url('../images/bg_tablet.png');
         min-height: 600px;
     }
+
     .text-main {
         margin-top: 15px;
         width: 440px;
     }
-  
+
     .text-wrapper {
         position: absolute;
         text-align: center;
@@ -80,38 +89,40 @@
         top: 0;
         left: 50%;
         transform: translateX(-50%);
-        margin-top: 370px;
-        
-        
+        margin-top: 350px;
+
+
     }
+
     .text-lozung {
         font-size: 45px;
         font-weight: 900;
         line-height: 59px;
-        
+
     }
+
     .text-description {
-       
-        font-size: 27px;   
+
+        font-size: 27px;
         line-height: 30px;
         letter-spacing: 1.7px;
         padding-top: 12px;
         font-weight: 300;
-       
-    
+
+
     }
 
     .text-description-item {
-       
         font-size: 27px;
         font-weight: 400;
     }
+
     .text-btn {
         position: absolute;
-        top: 115%;
+        top: 108%;
         left: 50%;
         transform: translateX(-50%);
-      
+
     }
 }
 
@@ -120,32 +131,35 @@
         background-image: url('../images/bg_full.png');
         min-height: 967px;
         width: 100%;
+
     }
-    
+
     .text-wrapper {
         position: absolute;
         text-align: left;
         display: block;
-        top: 26%;
-        left: 30%; 
-        
-              
+        top: 62%;
+        left: 30%;
+
+
     }
+
     .text-lozung {
         font-size: 65px;
         font-weight: 900;
         line-height: 59px;
-        
+
     }
+
     .text-main {
         margin-top: 30px;
         width: 495px;
         min-height: 100px;
     }
-    
+
     .text-description {
-       
-        font-size: 25px;   
+
+        font-size: 25px;
         line-height: 38px;
         font-weight: 300;
         padding-top: 12px;
@@ -160,25 +174,23 @@
         content: '';
         position: absolute;
         top: 22px;
-        left: 40px; 
-        background-color: $yellow-color;  
+        left: 40px;
+        background-color: $yellow-color;
         height: 60px;
         width: 4px;
     }
- 
+
 
     .text-description-item {
-        
+
         font-size: 25px;
-        font-weight: 500;  
-    
+        font-weight: 500;
+
     }
 
-    .text-btn {  
-    position: absolute;
-    top: 140%;
-    left: 110%;   
-    
+    .text-btn {
+        position: absolute;
+        top: 170%;
 
     }
 }
