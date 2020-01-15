@@ -1,5 +1,5 @@
 .bg-img {
-    background-image: url(../images/bg.png);
+    background-image: url('../images/bg.png');
     width: 100%;
     min-height: 560px;
     background-repeat: repeat;
@@ -51,7 +51,7 @@
 }
 
 .text-btn {
-    background-image: url(../images/scroll_down.png);
+    background-image: url('../images/scroll_down.png');
     height: 19px;
     width: 13px;
     position: absolute;
@@ -65,7 +65,7 @@
 
 
     .bg-img {
-        background-image: url(../images/bg_tablet.png);
+        background-image: url('../images/bg_tablet.png');
         min-height: 600px;
     }
     .text-main {
@@ -117,7 +117,7 @@
 
 @media (min-width:1300px) {
     .bg-img {
-        background-image: url(../images/bg_full.png);
+        background-image: url('../images/bg_full.png');
         min-height: 967px;
         width: 100%;
     }
