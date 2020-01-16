@@ -82,7 +82,6 @@
     &-link {
         text-transform: capitalize;
         text-align: center;
-        position: relative;
         padding-bottom: 10px;
         font-size: 28px;
         color: white;
@@ -102,7 +101,7 @@
             display: block;
             margin: 0 auto;
             visibility: hidden;
-            margin-top: 6px;
+            margin-bottom: 6px;
         }
 
         &:hover:after {
@@ -110,12 +109,15 @@
         }
     }
 
-    .show {
-        display: block;
-    }
-
 
 }
+.logo-link{
+    margin-top: 30px;
+}
+
+
+
+
 
 
 
