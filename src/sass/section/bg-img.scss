@@ -126,10 +126,18 @@
     }
 }
 
+
+@media (max-width:1299px) {
+    .menu:hover .text-wrapper {
+        position: static;
+        display: none;
+    }
+}
+
 @media (min-width:1300px) {
     .bg-img {
         background-image: url('../images/bg_full.png');
-        min-height: 967px;
+        min-height: 948px;
         width: 100%;
 
     }
@@ -138,7 +146,7 @@
         position: absolute;
         text-align: left;
         display: block;
-        top: 48%;
+        top: 34%;
         left: 30%;
 
 

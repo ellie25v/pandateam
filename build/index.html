@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible"
       content="ie=edge" />
-    <title>Placeholder title</title>
+    <title>Panda Team</title>
     <!-- Сюда будет всталена ссылка на файл стилей -->
     <!-- inject:css -->
     <link rel="stylesheet" href="css/styles.css">
@@ -18,30 +18,32 @@
     <header class="header">
         <div class="container">
             <h1 class="visually-hidden">GOITEENS</h1>
-            <img class="logo" src="./images/goiteens_logo-01.svg"
+            <img class="logo"
+                src="./images/goiteens_logo-01.svg"
                 alt="logo"
                 width="100"
                 height="26">
-            <div class="menu">
-                <div class="menu-dropdown">
-                    <nav class="main-nav">
-                        <ul class="main-nav__list">
-                            <li class="main-nav__list-item"><a class="main-nav__list-link"
-                                href="#">Front-End</a></li>
-                            <li class="main-nav__list-item"><a class="main-nav__list-link"
-                                href="#">game dev</a></li>
-                            <li class="main-nav__list-item"><a class="main-nav__list-link"
-                                href="#">smart design</a></li>
-                            <li class="main-nav__list-item"><a class="main-nav__list-link"
-                                href="#">GoStart kids</a></li>
-                            <li class="main-nav__list-item"><a class="main-nav__list-link"
-                                href="#">Вакансії</a></li>
-                            <li class="main-nav__list-item"><a class="main-nav__list-link"
-                                href="#">Контакти</a></li>
-                        </ul>
-                    </nav>
-                    <button class="menu__btn">Залишити заявку</button>
-                </div>
+            <button class="menu"></button>
+            <div class="menu-dropdown">
+                <nav class="main-nav">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__list-item">
+                            <a href="#directions"
+                                class="main-nav__list-link">Front-End</a></li>
+                        <li class="main-nav__list-item"><a class="main-nav__list-link"
+                                href="#directions">game dev</a></li>
+                        <li class="main-nav__list-item"><a class="main-nav__list-link"
+                                href="#directions">smart design</a></li>
+                        <li class="main-nav__list-item"><a class="main-nav__list-link"
+                                href="#directions">GoStart kids</a></li>
+                        <li class="main-nav__list-item"><a class="main-nav__list-link"
+                                href="#footer">Вакансії</a></li>
+                        <li class="main-nav__list-item"><a class="main-nav__list-link"
+                                href="#footer">Контакти</a></li>
+                    </ul>
+                </nav>
+                <a href="#"
+                    class="menu__btn">Залишити заявку</a>
             </div>
         </div>
     </header>
@@ -88,18 +90,20 @@
                   і підліткових психологів.</p>
           </div>
       </section>
-      <section class="direction section">
+      <section id="directions"
+          class="direction section">
           <div class="container">
-              <h2 class="section__title">
-                  <div class="section__title--target">
+              <div class="section__title">
+                  <div class=".section__title--target">
                       <svg class="target icon1">
                           <use href="./images/sprite.svg#title-icon-1-24px"></use>
                       </svg>
                   </div>
-                  <span class="section__title--text">напрямки goiteens</span>
-              </h2>
-              <ul class="direction__list">
-                  <li class="direction__list--item">
+                  <h2 class="section__title--text">напрямки goiteens</h2>
+              </div>
+              <div class="direction__list">
+                  <a href="#"
+                      class="direction__list--item">
                       <h3 class="item__title">Front-End</h3>
                       <p class="item__desc">Створення веб-сайтів будь-якої складності</p>
                       <p class="item__age">
@@ -115,8 +119,9 @@
                           <use href="./images/sprite.svg#right-arrow"></use>
       
                       </svg>
-                  </li>
-                  <li class="direction__list--item">
+                  </a>
+                  <a href="#"
+                      class="direction__list--item">
                       <h3 class="item__title">Game Dev</h3>
                       <p class="item__desc">Розробка власних комп’ютерних ігор</p>
                       <p class="item__age">
@@ -130,8 +135,9 @@
                       <svg class="arrow">
                           <use href="./images/sprite.svg#right-arrow"></use>
                       </svg>
-                  </li>
-                  <li class="direction__list--item">
+                  </a>
+                  <a href="#"
+                      class="direction__list--item">
                       <h3 class="item__title">Smart Design</h3>
                       <p class="item__desc">Опанування графічними редакторами</p>
                       <p class="item__age">
@@ -145,8 +151,9 @@
                       <svg class="arrow">
                           <use href="./images/sprite.svg#right-arrow"></use>
                       </svg>
-                  </li>
-                  <li class="direction__list--item">
+                  </a>
+                  <a href="#"
+                      class="direction__list--item">
                       <h3 class="item__title">GoStart Kids</h3>
                       <p class="item__desc">Мета: Вивчення базових технологій</p>
                       <p class="item__age">
@@ -161,8 +168,8 @@
                           <use href="./images/sprite.svg#right-arrow"></use>
       
                       </svg>
-                  </li>
-              </ul>
+                  </a>
+              </div>
           </div>
       
       </section>
@@ -183,9 +190,9 @@
               <ul class="program__list">
                   <li class="program__list--item">
                       <div class="program__icon--bg">
-                      <svg class="program__icon">
-                          <use href="./images/sprite.svg#1"></use>
-                      </svg>
+                          <svg class="program__icon">
+                              <use href="./images/sprite.svg#1"></use>
+                          </svg>
                       </div>
                       <p class="program__text">Даємо можливість
                           стати частиною першої підліткової ІТ-спільноти.
@@ -193,9 +200,9 @@
                   </li>
                   <li class="program__list--item">
                       <div class="program__icon--bg">
-                      <svg class="program__icon">
-                          <use href="./images/sprite.svg#2"></use>
-                      </svg>
+                          <svg class="program__icon">
+                              <use href="./images/sprite.svg#2"></use>
+                          </svg>
                       </div>
                       <p class="program__text">Гарантуємо підтримку професійних розробників
                           і викладачів.
@@ -203,9 +210,9 @@
                   </li>
                   <li class="program__list--item">
                       <div class="program__icon--bg">
-                      <svg class="program__icon">
-                          <use href="./images/sprite.svg#3"></use>
-                      </svg>
+                          <svg class="program__icon">
+                              <use href="./images/sprite.svg#3"></use>
+                          </svg>
                       </div>
                       <p class="program__text">Прокачуємо технічні
                           навички в програмуванні
@@ -215,28 +222,28 @@
                   </li>
                   <li class="program__list--item">
                       <div class="program__icon--bg">
-                      <svg class="program__icon">
-                          <use href="./images/sprite.svg#4"></use>
+                          <svg class="program__icon">
+                              <use href="./images/sprite.svg#4"></use>
       
-                      </svg>
+                          </svg>
                       </div>
                       <p class="program__text">Показуємо можливі шляхи монетизації ідей.
                       </p>
                   </li>
                   <li class="program__list--item">
                       <div class="program__icon--bg">
-                      <svg class="program__icon">
-                          <use href="./images/sprite.svg#5"></use>
-                      </svg>
+                          <svg class="program__icon">
+                              <use href="./images/sprite.svg#5"></use>
+                          </svg>
                       </div>
                       <p class="program__text">Вчимо презентувати себе та свої творчі задуми.
                       </p>
                   </li>
                   <li class="program__list--item">
                       <div class="program__icon--bg">
-                      <svg class="program__icon">
-                          <use href="./images/sprite.svg#6"></use>
-                      </svg>
+                          <svg class="program__icon">
+                              <use href="./images/sprite.svg#6"></use>
+                          </svg>
                       </div>
                       <p class="program__text">Допомагаємо розробити власне портфоліо.
                       </p>
@@ -302,40 +309,40 @@
           </div>
       </section>
     </main>
-    <footer class="footer section">
+    <footer id="footer" class="footer section">
         <div class="footer-container">
             <a href="#" class="footer-logo"><img src="./images/goiteens_logo-01.svg" alt="goiteens_logo"></a>
             <div class="footer-container-box">
-                <div class="footer__address">
+                <a href="https://goo.gl/maps/wG6mFEF6vX2enjEi6" class="footer__address">
                     01133 Україна, Київ
                     <span class="footer__address--span">5 хвилин від м. Печерська</span>
                     <span class="footer__address--span">бул. Лесі Українки 26</span>
                     4-й поверх
-                </div>
+                </a>
                 <div class="footer__contact">
-                    <a href="#" class="footer__contact--link">contact@goiteens.ua</a>
-                    <span class="footer__address--span">+38 093 343 21 27</span>
-                    <span class="footer__address--span">+38 067 326 95 92</span>
-                    +38 050 366 17 77</div>
+                    <a href="mailto:contact@goiteens.ua" class="footer__contact--link">contact@goiteens.ua</a>
+                    <a href="tel:+380933432127" class="footer__address--span">+38 093 343 21 27</a>
+                    <a href="tel:+380673269592" class="footer__address--span">+38 067 326 95 92</a>
+                    <a href="tel:+380503661777" class="footer__address--span">+38 050 366 17 77</a></div>
                 <div class="footer__contact-box">
-                    <button class="footer-btn footer-btn--hover">Залишити заявку</button>
+                    <a href="#" class="footer-btn footer-btn--hover">Залишити заявку</a>
                     <ul class="footer-social-list">
                         <li class="footer-social-list__item footer__icon--twitter">
-                            <a href="#" class="footer-social-list__link">
+                            <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F338480779676185%2F%3Fmessaging_source%3Dsource%253Apages%253Amessage_shortlink" class="footer-social-list__link" target="_blank">
                                 <svg class="footer__icon">
                                     <use href="./images/socialSprite.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-social-list__item footer__icon--facebook">
-                            <a href="#" class="footer-social-list__link">
+                            <a href="https://ru-ru.facebook.com/GoITeens" class="footer-social-list__link" target="_blank">
                                 <svg class="footer__icon">
                                     <use href="./images/socialSprite.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-social-list__item footer__icon--youtube">
-                            <a href="#" class="footer-social-list__link">
+                            <a href="https://www.youtube.com/channel/UCN7NQEBOUuIoXrJZzqVb58Q" class="footer-social-list__link" target="_blank">
                                 <svg class="footer__icon">
                                     <use href="./images/socialSprite.svg#icon-youtube"></use>
                                 </svg>
@@ -366,6 +373,7 @@
 
     <!-- Сюда будет всталена ссылка на файл скриптов -->
     <!-- inject:js -->
+    <script src="js/scripts.js"></script>
     <!-- endinject -->
   </body>
 
