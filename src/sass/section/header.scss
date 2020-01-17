@@ -5,11 +5,14 @@
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
-    
+
     .container {
         display: flex;
         justify-content: space-between;
     }
+}
+.header__logo-link{
+    z-index: 3;
 }
 
 .menu {
@@ -19,7 +22,6 @@
     margin-top: 30px;
 
     &-dropdown {
-        display: none;
         top: 0;
         left: 0;
         position: absolute;
@@ -27,6 +29,9 @@
         width: 100vw;
         height: 100%;
 
+        transform: translateY(-100%);
+        transition: transform .3s ease-in-out;
+        z-index: 2;
 
 
 
@@ -35,7 +40,6 @@
             background-image: url('../images/goiteens_logo-01.svg');
             width: 110px;
             height: 35px;
-            display: none;
             background-position: center;
             object-fit: cover;
             background-repeat: no-repeat;
@@ -43,12 +47,11 @@
             margin-left: 15%;
         }
 
-        &::after {
+        &-btn {
             content: "";
             background-image: url('../images/close.svg');
             width: 24px;
             height: 24px;
-            display: none;
             background-position: center;
             object-fit: cover;
             background-repeat: no-repeat;
@@ -58,27 +61,20 @@
         }
     }
 
-    &:hover .menu-dropdown {
-        display: block;
-    }
-
-    &:hover .menu-dropdown::before {
-        display: block;
-    }
-
-    &:hover .menu-dropdown::after {
-        display: block;
-    }
 
 
     &__btn {
         display: block;
         margin: 20px auto;
         box-shadow: 0 5px 5px rgba($color: #461a97, $alpha: 0.5);
-        background-color: #f39313;
-
         @extend %button;
+        padding-top: 10px;
+        text-align: center;
     }
+}
+
+.visible {
+    transform: translateY(0);
 }
 
 .main-nav__list {
@@ -92,15 +88,16 @@
     &-link {
         text-transform: capitalize;
         text-align: center;
-        position: relative;
         padding-bottom: 10px;
         font-size: 28px;
         color: white;
         font-family: $p-font;
         font-weight: bold;
+
     }
 
     &-item {
+        cursor: pointer;
 
         &:after {
             content: "";
@@ -110,17 +107,32 @@
             display: block;
             margin: 0 auto;
             visibility: hidden;
-            margin-top: 6px;
+            margin-bottom: 6px;
         }
 
         &:hover:after {
             visibility: visible;
         }
+
     }
 
 
+}
+
+.header__logo-link {
+    margin-top: 30px;
 
 }
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 768px) {
     .header {
@@ -132,12 +144,6 @@
     }
 }
 
-@media (max-width:1299px){
-    .menu:hover .text-wrapper{
-        position: static;
-        display: none;
-    }
-}
 
 @media (min-width: 1300px) {
     .header {
@@ -155,30 +161,29 @@
     }
 
     .menu {
-        margin-right: 50px;
-        display: flex;
-        justify-content: flex-end;
-        background-image: none;
-        width: 100%;
-        min-height: 42px;
+        display: none;
 
         &-dropdown {
-            margin: 0;
+            margin: 30px 30px 0 0;
             position: static;
             background-color: transparent;
             width: 1020px;
             display: flex;
             justify-content: space-between;
+            min-height: 42px;
+            transform: translateY(0%);
+
 
             &::before {
                 display: none;
             }
 
-            &::after {
+            &-btn {
                 display: none;
             }
 
         }
+
         &:hover .menu-dropdown {
             display: flex;
         }
@@ -214,6 +219,21 @@
                 padding-bottom: 0px;
                 font-size: 18px;
             }
+
+            &-item {
+
+                &:after {
+
+                    margin-bottom: 0;
+                    margin-top: 6px;
+                }
+            }
         }
+    }
+}
+
+@media (min-width: 1680px) {
+    .header .container {
+        width: 1680px;
     }
 }

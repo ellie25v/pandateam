@@ -25,6 +25,9 @@
     line-height: 25px;
     margin-bottom: 22px;
 }
+.footer__address--span{
+    color: $footer-color;
+}
 
 .footer__contact--link {
     color: $footer-color;
@@ -39,7 +42,8 @@
     font-family: $p-font;
     font-weight: 700;
     font-size: 16px;
-    cursor: pointer;
+    padding-top: 10px;
+    text-align: center;
     margin-bottom: 34px;
 }
 
@@ -210,6 +214,22 @@
         &-main-anchor {
             bottom: 0;
             right: 0;
+            transform: translate(-60%, -90%);
+        }
+    }
+}
+@media (min-width: 1680px) {
+    .footer {
+        position: static;
+
+        &-container {
+            width: 1152px;
+            position: relative;
+        }
+
+        &-main-anchor {
+            bottom: 136px;
+            right: -142px;
             transform: translate(-60%, -90%);
         }
     }
