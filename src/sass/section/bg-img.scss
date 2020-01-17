@@ -110,6 +110,14 @@
     }
 }
 
+
+@media (max-width:1299px) {
+    .menu:hover .text-wrapper {
+        position: static;
+        display: none;
+    }
+}
+
 @media (min-width:1300px) {
     .bg-img {
         background-image: url('../images/bg_full.png');
@@ -117,6 +125,7 @@
         width: 100%;
 
         padding-top: 540px;
+
 
     }
 
