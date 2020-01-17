@@ -1,5 +1,4 @@
 
-
 "use strict";
 var burgerBtn = document.querySelector('.menu');
 var burgerBtnClose = document.querySelector('.menu-dropdown-btn');

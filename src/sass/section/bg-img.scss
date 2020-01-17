@@ -56,7 +56,12 @@
     margin-top: 60px;
 }
 
-
+@media (max-width: 767px) and (orientation: landscape){
+    .bg-img {
+        min-height: 400px;
+        padding-top: 140px;
+    }
+}
 @media (min-width:768px) {
 
 
@@ -99,14 +104,6 @@
 
     .text-btn {
     
-    }
-}
-
-
-@media (max-width:1299px) {
-    .menu:hover .text-wrapper {
-        position: static;
-        display: none;
     }
 }
 
