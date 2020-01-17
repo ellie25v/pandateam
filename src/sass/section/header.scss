@@ -28,9 +28,11 @@
         background-color: #824fe3;
         width: 100vw;
         height: 100%;
+
         transform: translateY(-100%);
         transition: transform .3s ease-in-out;
         z-index: 2;
+
 
 
         &::before {
@@ -95,6 +97,7 @@
     }
 
     &-item {
+        cursor: pointer;
 
         &:after {
             content: "";
@@ -111,14 +114,15 @@
             visibility: visible;
         }
 
+
     }
 
 }
 
+
 .header__logo-link {
     margin-top: 30px;
 }
-
 
 
 

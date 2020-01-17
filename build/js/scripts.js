@@ -1,3 +1,4 @@
+
 "use strict";
 
 var burgerBtn = document.querySelector('.menu');
@@ -13,4 +14,6 @@ var closeMenu = function closeMenu() {
 };
 
 burgerBtn.addEventListener('click', openMenu);
+
 burgerBtnClose.addEventListener('click', closeMenu);
+
